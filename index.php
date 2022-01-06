@@ -14,11 +14,11 @@
 	<?php include(THEME_DIR_PHP . 'navbar.php'); ?>
 
 	<!-- Content -->
-	<div class="container">
+	<div class="container mt-3 mb-5">
 		<div class="row">
 
 			<!-- Blog Posts -->
-			<div class="col-md-14">
+			<div class="col-md-12">
 				<?php
 				// Bludit content are pages
 				// But if you order the content by date

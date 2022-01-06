@@ -1,48 +1,31 @@
-<!-- Post -->
-<div class="card my-5 border-0">
+<div class="container mt-3 mb-5">
+  <div class="row">
+    <div class="col-lg-2"></div>
+    <div class="col-md-12 col-lg-8">
+      <div class="card my-4 border-0">
 
-	<!-- Load Bludit Plugins: Page Begin -->
-	<?php Theme::plugins('pageBegin'); ?>
+        <!-- Load Bludit Plugins: Page Begin -->
+        <?php Theme::plugins('pageBegin'); ?>
 
-	<div class="container">
-		<div class="row">
+        <?php if ($page->coverImage()) : ?>
+          <img class="card-img-top mb-4 rounded-0" alt="Cover Image" src="<?php echo $page->coverImage(); ?>" />
+        <?php endif ?>
+        <div class="card-body p-0">
+          <a class="text-dark" href="<?php echo $page->permalink(); ?>">
+            <h1 class="title text-center text-uppercase"><?php echo $page->title(); ?></h1>
+          </a>
+          <h6 class="card-subtitle mb-5 mt-1 text-muted text-center text-uppercase"> <?php if (!$page->isStatic() && !$url->notFound()) : ?>
+              <i class="far fa-clock text-warning">&nbsp;</i><?php echo $page->date(); ?>&nbsp; &nbsp;<i class="far fa-folder text-warning"></i>&nbsp;<?php echo $page->category(); ?>
+          </h6>
+        <?php endif ?>
+        <?php echo $page->content(); ?>
+        </div>
 
-			<div class="col-lg-2"></div>
+        <!-- Load Bludit Plugins: Page End -->
+        <?php Theme::plugins('pageEnd'); ?>
 
-			<!-- Blog Posts -->
-			<div class="col-lg-8">
-
-				<!-- Cover image -->
-				<?php if ($page->coverImage()) : ?>
-					<img class="card-img-top mb-5 rounded-0" alt="Cover Image" src="<?php echo $page->coverImage(); ?>" />
-				<?php endif ?>
-
-				<div class="card-body p-0">
-					<!-- Title -->
-					<a class="text-center title" href="<?php echo $page->permalink(); ?>">
-						<h1 class="title text-center"><?php echo $page->title(); ?></h1>
-					</a>
-
-					<?php if (!$page->isStatic() && !$url->notFound()) : ?>
-						<!-- Creation date -->
-						<h6 class="card-subtitle mb-5 text-muted text-center undertitle">
-							<i class="far fa-clock"></i> <?php echo $page->date(); ?> &nbsp; &nbsp;
-							<i class="far fa-folder"></i> <a href="<?php echo $page->categoryPermalink() ?>"><?php echo $page->category() ?></a>
-						</h6>
-					<?php endif ?>
-
-					<!-- Full content -->
-					<?php echo $page->content(); ?>
-
-				</div>
-			</div>
-
-			<div class="col-lg-2"></div>
-
-		</div>
-	</div>
-
-	<!-- Load Bludit Plugins: Page End -->
-	<?php Theme::plugins('pageEnd'); ?>
-
+      </div>
+      <div class="col-lg-2"></div>
+    </div>
+  </div>
 </div>

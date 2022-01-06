@@ -1,10 +1,10 @@
 {
-	"author": "Bludit",
-	"email": "",
-	"website": "https://themes.bludit.com",
-	"version": "3.13.1",
-	"releaseDate": "2020-07-28",
-	"license": "MIT",
-	"compatible": "3.13.1",
-	"notes": ""
+    "author": "0xffd700",
+    "email": "bludit@0xffd700.com",
+    "website": "https://0xffd700.com/",
+    "version": "1.0",
+    "releaseDate": "2022-01-06",
+    "license": "GNU GPLv3",
+    "compatible": "3.13.1",
+    "notes": "Have fun!"
 }
