@@ -1,7 +1,7 @@
 <?php if ($WHERE_AM_I == 'home') : ?>
 
 <?php endif; ?>
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-2">
 	<div class="row">
 		<div class="col-sm-14 pt-4 pb-4">
 			<div class="row row-cols-1 row-cols-md-3 g-4">
