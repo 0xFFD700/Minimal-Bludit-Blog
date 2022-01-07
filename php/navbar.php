@@ -7,6 +7,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+    <li class="nav-item">
+            <a class="nav-link" href="/about">about</a>
+          </li>
       <?php foreach ($categories->db as $key => $fields) :
         if ($fields['list']) :  ?>
           <li class="nav-item">
