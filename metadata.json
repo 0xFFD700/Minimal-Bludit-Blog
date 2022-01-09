@@ -3,8 +3,8 @@
     "email": "bludit@0xffd700.com",
     "website": "https://0xffd700.com/",
     "version": "1.0",
-    "releaseDate": "2022-01-06",
-    "license": "GNU GPLv3",
+    "releaseDate": "2022-01-09",
+    "license": "MIT",
     "compatible": "3.13.1",
     "notes": "Have fun!"
 }
